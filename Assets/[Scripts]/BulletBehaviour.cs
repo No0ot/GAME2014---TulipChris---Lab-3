@@ -30,7 +30,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         if(transform.position.y < bulletBounds.max)
         {
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 }
